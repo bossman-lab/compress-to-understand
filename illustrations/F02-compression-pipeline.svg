@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 850" role="img" aria-labelledby="title desc">
+  <title id="title">压缩管道全景图</title>
+  <desc id="desc">输入经 HLT、差异映射、精通五层质检，形成可运行模型，并由辅助系统支撑</desc>
+  <defs>
+    <style>
+      text{font-family:"Noto Sans SC","Microsoft YaHei","PingFang SC","Hiragino Sans GB",Arial,sans-serif;fill:#243042}
+      .bg{fill:#fbfcff}.box{fill:#fff;stroke:#d8e0ee;stroke-width:2;rx:16}.title{font-size:34px;font-weight:700}.h{font-size:24px;font-weight:700}.t{font-size:19px}.s{font-size:17px;fill:#667085}.white{fill:#fff}.pipe{stroke:#8b98aa;stroke-width:4;fill:none;marker-end:url(#arrow)}.loop{stroke:#e64f5c;stroke-width:4;fill:none;stroke-dasharray:10 8;marker-end:url(#redArrow)}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10z" fill="#8b98aa"/></marker>
+    <marker id="redArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10z" fill="#e64f5c"/></marker>
+  </defs>
+  <rect class="bg" width="1400" height="850"/>
+  <text x="700" y="62" text-anchor="middle" class="title">压缩管道全景：从信息流到可运行模型</text>
+
+  <g transform="translate(60 130)">
+    <rect class="box" x="0" y="0" width="170" height="120"/>
+    <circle cx="85" cy="38" r="24" fill="#f1edff"/><text x="85" y="46" text-anchor="middle" class="h">输入</text>
+    <text x="85" y="82" text-anchor="middle" class="t">教材 / 代码 / 现象</text>
+  </g>
+  <path class="pipe" d="M235 190 H300"/>
+  <g transform="translate(305 130)">
+    <rect class="box" x="0" y="0" width="190" height="120"/>
+    <rect x="20" y="18" width="150" height="38" rx="19" fill="#18a8b8"/><text x="95" y="45" text-anchor="middle" class="white h">HLT筛选</text>
+    <text x="95" y="83" text-anchor="middle" class="t">高频 / 杠杆 / 迁移</text>
+  </g>
+  <path class="pipe" d="M500 190 H565"/>
+  <g transform="translate(570 130)">
+    <rect class="box" x="0" y="0" width="200" height="120"/>
+    <rect x="20" y="18" width="160" height="38" rx="19" fill="#f28c28"/><text x="100" y="45" text-anchor="middle" class="white h">差异映射</text>
+    <text x="100" y="83" text-anchor="middle" class="t">基线 + delta</text>
+  </g>
+  <path class="pipe" d="M775 190 H840"/>
+  <g transform="translate(845 130)">
+    <rect class="box" x="0" y="0" width="230" height="120"/>
+    <rect x="20" y="18" width="190" height="38" rx="19" fill="#e64f5c"/><text x="115" y="45" text-anchor="middle" class="white h">精通五层质检</text>
+    <text x="115" y="83" text-anchor="middle" class="t">复述 → 迁移</text>
+  </g>
+  <path class="pipe" d="M1080 190 H1145"/>
+  <g transform="translate(1150 130)">
+    <rect class="box" x="0" y="0" width="190" height="120"/>
+    <circle cx="95" cy="38" r="24" fill="#f0fbf5"/><text x="95" y="46" text-anchor="middle" class="h">输出</text>
+    <text x="95" y="83" text-anchor="middle" class="t">可运行模型</text>
+  </g>
+  <path class="loop" d="M960 260 C960 330 655 330 655 255"/>
+  <text x="810" y="347" text-anchor="middle" class="s">质检不合格：回到差异映射，重新压缩</text>
+
+  <g transform="translate(150 410)">
+    <text x="550" y="0" text-anchor="middle" class="h">L1-L5 质检标准</text>
+    <g transform="translate(0 35)">
+      <rect class="box" x="0" y="0" width="205" height="125"/><circle cx="102" cy="28" r="20" fill="#f1edff"/><text x="102" y="36" text-anchor="middle" class="h">L1</text><text x="102" y="70" text-anchor="middle" class="t">能复述</text><text x="102" y="100" text-anchor="middle" class="s">不漏关键概念</text>
+      <rect class="box" x="225" y="0" width="205" height="125"/><circle cx="327" cy="28" r="20" fill="#eefbfd"/><text x="327" y="36" text-anchor="middle" class="h">L2</text><text x="327" y="70" text-anchor="middle" class="t">能解释</text><text x="327" y="100" text-anchor="middle" class="s">能说清因果</text>
+      <rect class="box" x="450" y="0" width="205" height="125"/><circle cx="552" cy="28" r="20" fill="#f0fbf5"/><text x="552" y="36" text-anchor="middle" class="h">L3</text><text x="552" y="70" text-anchor="middle" class="t">能预测</text><text x="552" y="100" text-anchor="middle" class="s">参数变化可判断</text>
+      <rect class="box" x="675" y="0" width="205" height="125"/><circle cx="777" cy="28" r="20" fill="#fff4e8"/><text x="777" y="36" text-anchor="middle" class="h">L4</text><text x="777" y="70" text-anchor="middle" class="t">能诊断</text><text x="777" y="100" text-anchor="middle" class="s">知道错在哪里</text>
+      <rect class="box" x="900" y="0" width="205" height="125"/><circle cx="1002" cy="28" r="20" fill="#fdf0f0"/><text x="1002" y="36" text-anchor="middle" class="h">L5</text><text x="1002" y="70" text-anchor="middle" class="t">能迁移</text><text x="1002" y="100" text-anchor="middle" class="s">换场景仍可用</text>
+    </g>
+  </g>
+
+  <g transform="translate(110 660)">
+    <text x="590" y="0" text-anchor="middle" class="h">底部辅助系统：不是替代管道，而是支撑管道运行</text>
+    <rect x="0" y="30" width="270" height="82" rx="14" fill="#f1edff" stroke="#d8e0ee"/><text x="135" y="65" text-anchor="middle" class="h">Anki记忆固化</text><text x="135" y="94" text-anchor="middle" class="s">保持压缩结果</text>
+    <rect x="300" y="30" width="270" height="82" rx="14" fill="#f0fbf5" stroke="#d8e0ee"/><text x="435" y="65" text-anchor="middle" class="h">Zettelkasten知识组织</text><text x="435" y="94" text-anchor="middle" class="s">保存关系结构</text>
+    <rect x="600" y="30" width="270" height="82" rx="14" fill="#eefbfd" stroke="#d8e0ee"/><text x="735" y="65" text-anchor="middle" class="h">AI代理</text><text x="735" y="94" text-anchor="middle" class="s">提问、生成、校验</text>
+    <rect x="900" y="30" width="270" height="82" rx="14" fill="#fff4e8" stroke="#d8e0ee"/><text x="1035" y="65" text-anchor="middle" class="h">日志复盘</text><text x="1035" y="94" text-anchor="middle" class="s">让反馈可追踪</text>
+  </g>
+</svg>

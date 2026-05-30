@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850" role="img" aria-labelledby="title desc">
+  <title id="title">经典学习法坐标图</title>
+  <desc id="desc">学习方法在操作复杂度与压缩深度坐标系中的分布</desc>
+  <defs>
+    <style>
+      text{font-family:"Noto Sans SC","Microsoft YaHei","PingFang SC","Hiragino Sans GB",Arial,sans-serif;fill:#243042}
+      .bg{fill:#fbfcff}.grid{stroke:#e5ebf5;stroke-width:1}.axis{stroke:#475467;stroke-width:3;marker-end:url(#arrow)}.title{font-size:34px;font-weight:700}.label{font-size:20px;font-weight:600}.small{font-size:17px;fill:#667085}.dotText{font-size:17px;font-weight:600}.halo{stroke:#7a5cff;stroke-width:3;stroke-dasharray:6 5}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10z" fill="#475467"/></marker>
+  </defs>
+  <rect class="bg" width="1200" height="850"/>
+  <text x="600" y="58" text-anchor="middle" class="title">经典学习法的压缩论坐标</text>
+  <g transform="translate(130 105)">
+    <rect x="0" y="0" width="880" height="600" rx="12" fill="#fff" stroke="#d8e0ee" stroke-width="2"/>
+    <g>
+      <line class="grid" x1="176" y1="0" x2="176" y2="600"/><line class="grid" x1="352" y1="0" x2="352" y2="600"/><line class="grid" x1="528" y1="0" x2="528" y2="600"/><line class="grid" x1="704" y1="0" x2="704" y2="600"/>
+      <line class="grid" x1="0" y1="120" x2="880" y2="120"/><line class="grid" x1="0" y1="240" x2="880" y2="240"/><line class="grid" x1="0" y1="360" x2="880" y2="360"/><line class="grid" x1="0" y1="480" x2="880" y2="480"/>
+    </g>
+    <line class="axis" x1="60" y1="540" x2="825" y2="540"/>
+    <line class="axis" x1="60" y1="540" x2="60" y2="55"/>
+    <text x="450" y="585" text-anchor="middle" class="label">操作复杂度：简单 → 复杂</text>
+    <text x="-310" y="25" transform="rotate(-90)" text-anchor="middle" class="label">压缩深度：表层 → 深层</text>
+
+    <g>
+      <circle cx="145" cy="475" r="26" fill="#18a8b8"/><text x="145" y="481" text-anchor="middle" class="dotText">Anki</text>
+      <circle cx="230" cy="460" r="26" fill="#18a8b8"/><text x="230" y="466" text-anchor="middle" class="dotText">笔记</text>
+      <circle cx="210" cy="395" r="26" fill="#18a8b8"/><text x="210" y="401" text-anchor="middle" class="dotText">SQ3R</text>
+      <circle cx="360" cy="330" r="34" fill="#29a66a"/><text x="360" y="336" text-anchor="middle" class="dotText">思维导图</text>
+      <circle cx="455" cy="300" r="34" fill="#f28c28"/><text x="455" y="306" text-anchor="middle" class="dotText">Kolb循环</text>
+      <circle cx="470" cy="205" r="38" fill="#29a66a"/><text x="470" y="211" text-anchor="middle" class="dotText">Zettelkasten</text>
+      <circle cx="585" cy="185" r="34" fill="#e64f5c"/><text x="585" y="191" text-anchor="middle" class="dotText">Bloom</text>
+      <ellipse cx="650" cy="245" rx="48" ry="105" fill="#fdf0f0" stroke="#e64f5c" stroke-width="3"/><text x="650" y="240" text-anchor="middle" class="dotText">Dreyfus</text><text x="650" y="267" text-anchor="middle" class="small">阶段框架</text>
+      <circle cx="690" cy="135" r="42" fill="#f28c28"/><text x="690" y="141" text-anchor="middle" class="dotText">刻意练习</text>
+      <rect x="742" y="62" width="105" height="42" rx="21" fill="#7a5cff"/><text x="795" y="89" text-anchor="middle" fill="#fff" class="dotText">精通五层</text>
+      <rect x="750" y="125" width="105" height="42" rx="21" fill="#7a5cff"/><text x="802" y="152" text-anchor="middle" fill="#fff" class="dotText">差异驱动</text>
+      <rect x="825" y="188" width="70" height="42" rx="21" fill="#7a5cff"/><text x="860" y="215" text-anchor="middle" fill="#fff" class="dotText">HLT</text>
+      <rect x="780" y="252" width="95" height="42" rx="21" fill="#7a5cff"/><text x="827" y="279" text-anchor="middle" fill="#fff" class="dotText">Agent</text>
+      <rect x="725" y="42" width="188" height="274" rx="22" fill="none" class="halo"/>
+      <text x="819" y="340" text-anchor="middle" class="small">独创方法群：管道级配置</text>
+    </g>
+  </g>
+  <g transform="translate(1040 145)">
+    <text x="0" y="0" class="label">图例</text>
+    <circle cx="15" cy="42" r="12" fill="#18a8b8"/><text x="36" y="49" class="small">记忆/输入</text>
+    <circle cx="15" cy="82" r="12" fill="#29a66a"/><text x="36" y="89" class="small">结构组织</text>
+    <circle cx="15" cy="122" r="12" fill="#f28c28"/><text x="36" y="129" class="small">实践循环</text>
+    <circle cx="15" cy="162" r="12" fill="#e64f5c"/><text x="36" y="169" class="small">质检框架</text>
+    <rect x="3" y="192" width="24" height="24" rx="8" fill="#7a5cff"/><text x="36" y="212" class="small">本书方法</text>
+  </g>
+</svg>

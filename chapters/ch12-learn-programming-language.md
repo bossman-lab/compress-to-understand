@@ -216,9 +216,9 @@ logstat --file access.log --field status
 然后输出：
 
 ```text
-200  15342
-404    812
-500     27
+200 15342
+404 812
+500 27
 ```
 
 跑通时你会遇到第一批不适。
@@ -255,12 +255,12 @@ logstat --file access.log --field status
 
 ```rust
 fn count_status(lines: Vec<String>) -> HashMap<String, usize> {
-    let mut counts = HashMap::new();
-    for line in lines {
-        let status = parse_status(line);
-        *counts.entry(status).or_insert(0) += 1;
-    }
-    counts
+ let mut counts = HashMap::new();
+ for line in lines {
+ let status = parse_status(line);
+ *counts.entry(status).or_insert(0) += 1;
+ }
+ counts
 }
 ```
 
@@ -282,7 +282,7 @@ fn count_status(lines: Vec<String>) -> HashMap<String, usize> {
 
 ```rust
 fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
-    if x.len() > y.len() { x } else { y }
+ if x.len() > y.len() { x } else { y }
 }
 ```
 
@@ -323,7 +323,7 @@ Level 2 的练习方式应该很笨：每遇到一个借用相关错误，就把
 
 ```rust
 fn parse_status(line: String) -> String {
-    line.split_whitespace().nth(2).unwrap_or("").to_string()
+ line.split_whitespace().nth(2).unwrap_or("").to_string()
 }
 ```
 
@@ -331,7 +331,7 @@ fn parse_status(line: String) -> String {
 
 ```rust
 fn parse_status(line: &str) -> &str {
-    line.split_whitespace().nth(2).unwrap_or("")
+ line.split_whitespace().nth(2).unwrap_or("")
 }
 ```
 
@@ -345,7 +345,7 @@ fn parse_status(line: &str) -> &str {
 
 ```rust
 fn choose<'a>(left: &'a str, right: &'a str, prefer_left: bool) -> &'a str {
-    if prefer_left { left } else { right }
+ if prefer_left { left } else { right }
 }
 ```
 
@@ -353,7 +353,7 @@ fn choose<'a>(left: &'a str, right: &'a str, prefer_left: bool) -> &'a str {
 
 ```rust
 fn choose(left: &str, right: &str, prefer_left: bool) -> &str {
-    if prefer_left { left } else { right }
+ if prefer_left { left } else { right }
 }
 ```
 
@@ -371,12 +371,12 @@ fn choose(left: &str, right: &str, prefer_left: bool) -> &str {
 
 ```rust
 fn count_owned(lines: &[String]) -> HashMap<String, usize> {
-    let mut counts = HashMap::new();
-    for line in lines {
-        let status = parse_status(line).to_string();
-        *counts.entry(status).or_insert(0) += 1;
-    }
-    counts
+ let mut counts = HashMap::new();
+ for line in lines {
+ let status = parse_status(line).to_string();
+ *counts.entry(status).or_insert(0) += 1;
+ }
+ counts
 }
 ```
 
@@ -384,12 +384,12 @@ fn count_owned(lines: &[String]) -> HashMap<String, usize> {
 
 ```rust
 fn count_borrowed<'a>(lines: &'a [String]) -> HashMap<&'a str, usize> {
-    let mut counts = HashMap::new();
-    for line in lines {
-        let status = parse_status(line);
-        *counts.entry(status).or_insert(0) += 1;
-    }
-    counts
+ let mut counts = HashMap::new();
+ for line in lines {
+ let status = parse_status(line);
+ *counts.entry(status).or_insert(0) += 1;
+ }
+ counts
 }
 ```
 
@@ -443,9 +443,9 @@ println!("{}", first);
 ```rust
 let mut names = vec!["a".to_string(), "b".to_string()];
 for name in &names {
-    if name == "a" {
-        names.push("c".to_string());
-    }
+ if name == "a" {
+ names.push("c".to_string());
+ }
 }
 ```
 
@@ -618,3 +618,7 @@ Rust 的优势来自把约束表达清楚。只追求编译通过，会把这门
 这种能力会留下来。
 
 以后再学 Go、Zig、Swift、Kotlin、React、PyTorch、Ray，流程都一样。先判断价值，再映射差异，再分层精通。技术会换，管道不换。
+
+下一章，我们换一个更硬的对象：信息论。编程语言有旧框架可挂，硬科学常常没有这么舒服的基线，所以同一套压缩系统必须先处理“如何建立入口模型”的问题。
+
+<!-- QC PASS: 2026-05-30 -->

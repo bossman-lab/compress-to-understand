@@ -178,18 +178,18 @@ from math import log2
 
 
 def entropy(xs):
-    if not xs:
-        raise ValueError("empty sequence has no empirical distribution")
+ if not xs:
+ raise ValueError("empty sequence has no empirical distribution")
 
-    total = len(xs)
-    counts = Counter(xs)
-    h = 0.0
+ total = len(xs)
+ counts = Counter(xs)
+ h = 0.0
 
-    for count in counts.values():
-        p = count / total
-        h -= p * log2(p)
+ for count in counts.values():
+ p = count / total
+ h -= p * log2(p)
 
-    return h
+ return h
 
 
 print(entropy([0, 0, 0, 0]))
@@ -401,3 +401,7 @@ entropy(list(range(1000)))
 ```
 
 这不是终点，但它是一个真正的入口。你从这里继续走，编码、噪声、信道容量、互信息、压缩和学习，都会开始连成一张网。
+
+学完一个对象还不够。下一章，我们把这些动作收束成个人系统：怎样按季度、月、周、日运行这条管道，让压缩、质检和复盘变成可重复的习惯。
+
+<!-- QC PASS: 2026-05-30 -->

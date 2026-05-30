@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">改个参数会怎样开篇场景</title>
+  <desc id="desc">左半学了很多，右半改参数卡住的概念对比图</desc>
+  <defs>
+    <style>
+      text{font-family:"Noto Sans SC","Microsoft YaHei","PingFang SC","Hiragino Sans GB",Arial,sans-serif;fill:#243042}
+      .bg{fill:#fbfcff}.panel{fill:#fff;stroke:#d8e0ee;stroke-width:2}.title{font-size:34px;font-weight:700}.h{font-size:28px;font-weight:700}.m{font-size:22px;font-weight:600}.t{font-size:18px}.s{font-size:16px;fill:#667085}.white{fill:#fff}.arrow{stroke:#8b98aa;stroke-width:4;fill:none;marker-end:url(#arrow)}.warn{stroke:#e64f5c;stroke-width:4;fill:none}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10z" fill="#8b98aa"/></marker>
+  </defs>
+  <rect class="bg" width="1200" height="720"/>
+  <text x="600" y="62" text-anchor="middle" class="title">开篇问题：改个参数会怎样？</text>
+  <g transform="translate(70 115)">
+    <rect class="panel" x="0" y="0" width="500" height="510" rx="18"/>
+    <rect x="0" y="0" width="500" height="62" rx="18" fill="#18a8b8"/>
+    <text x="250" y="40" text-anchor="middle" class="white h">左半：学了很多</text>
+    <g transform="translate(55 105)">
+      <rect x="0" y="0" width="390" height="72" rx="12" fill="#eefbfd" stroke="#d8e0ee"/>
+      <text x="26" y="45" class="m">课程视频</text><text x="310" y="45" class="t">已刷完</text>
+      <rect x="0" y="96" width="390" height="72" rx="12" fill="#f1edff" stroke="#d8e0ee"/>
+      <text x="26" y="141" class="m">笔记摘要</text><text x="310" y="141" class="t">很完整</text>
+      <rect x="0" y="192" width="390" height="72" rx="12" fill="#f0fbf5" stroke="#d8e0ee"/>
+      <text x="26" y="237" class="m">术语定义</text><text x="310" y="237" class="t">能复述</text>
+    </g>
+    <g transform="translate(145 400)">
+      <circle cx="48" cy="34" r="30" fill="#fff4e8" stroke="#f28c28" stroke-width="3"/>
+      <path d="M48 64 V130 M18 88 H78 M48 130 L18 172 M48 130 L78 172" stroke="#243042" stroke-width="5" stroke-linecap="round"/>
+      <text x="150" y="44" class="m">顺流输出</text>
+      <text x="150" y="78" class="s">按原路径回答很顺</text>
+    </g>
+  </g>
+  <path class="arrow" d="M585 360 H650"/>
+  <g transform="translate(630 115)">
+    <rect class="panel" x="0" y="0" width="500" height="510" rx="18"/>
+    <rect x="0" y="0" width="500" height="62" rx="18" fill="#e64f5c"/>
+    <text x="250" y="40" text-anchor="middle" class="white h">右半：改参数卡住</text>
+    <g transform="translate(58 108)">
+      <rect x="0" y="0" width="384" height="150" rx="14" fill="#fff" stroke="#d8e0ee" stroke-width="2"/>
+      <text x="26" y="42" class="m">learning_rate = 1e-4</text>
+      <line x1="26" y1="72" x2="358" y2="72" stroke="#e5ebf5"/>
+      <text x="26" y="112" class="m">改成 1e-3 会怎样？</text>
+      <circle cx="337" cy="102" r="22" fill="#fdf0f0" stroke="#e64f5c" stroke-width="3"/>
+      <path d="M328 93 L346 111 M346 93 L328 111" class="warn"/>
+    </g>
+    <g transform="translate(85 310)">
+      <rect x="0" y="0" width="330" height="86" rx="14" fill="#fdf0f0" stroke="#e64f5c" stroke-width="2"/>
+      <text x="165" y="36" text-anchor="middle" class="m">缺少可运行模型</text>
+      <text x="165" y="66" text-anchor="middle" class="s">知道词，不知道因果链</text>
+    </g>
+    <g transform="translate(155 420)">
+      <circle cx="44" cy="28" r="26" fill="#f1edff" stroke="#7a5cff" stroke-width="3"/>
+      <path d="M44 54 V105 M16 78 H72 M44 105 L22 146 M44 105 L66 146" stroke="#243042" stroke-width="5" stroke-linecap="round"/>
+      <text x="140" y="42" class="m">卡住</text>
+      <text x="140" y="75" class="s">无法预测变化方向</text>
+    </g>
+  </g>
+  <g transform="translate(260 655)">
+    <rect x="0" y="0" width="680" height="44" rx="22" fill="#243042"/>
+    <text x="340" y="30" text-anchor="middle" class="white m">本书目标：把知识压缩成能解释、能预测、能迁移的模型</text>
+  </g>
+</svg>
