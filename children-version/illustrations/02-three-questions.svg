@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="'Noto Sans SC', sans-serif">
+  <rect width="600" height="400" fill="#faf5ff" rx="16"/>
+  <text x="300" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#6b21a8">学前三问</text>
+  <!-- Hand -->
+  <g transform="translate(100,60)">
+    <ellipse cx="200" cy="200" rx="80" ry="100" fill="#fcd34d"/>
+    <!-- 5 fingers spread -->
+    <rect x="185" y="30" width="30" height="120" rx="15" fill="#fcd34d" stroke="#d97706" stroke-width="2"/>
+    <rect x="150" y="50" width="28" height="110" rx="14" fill="#fde047" stroke="#d97706" stroke-width="2"/>
+    <rect x="220" y="50" width="28" height="110" rx="14" fill="#fde047" stroke="#d97706" stroke-width="2"/>
+    <rect x="125" y="80" width="25" height="90" rx="12" fill="#fef9c3" stroke="#d97706" stroke-width="2"/>
+    <rect x="245" y="80" width="25" height="90" rx="12" fill="#fef9c3" stroke="#d97706" stroke-width="2"/>
+  </g>
+  <!-- Thumb question -->
+  <rect x="110" y="80" width="120" height="50" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="170" y="100" text-anchor="middle" font-size="9" font-weight="bold" fill="#854d0e">大拇指 👍</text>
+  <text x="170" y="118" text-anchor="middle" font-size="8" fill="#854d0e">以后还用得上吗？</text>
+  <!-- Index question -->
+  <rect x="360" y="70" width="120" height="50" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="420" y="90" text-anchor="middle" font-size="9" font-weight="bold" fill="#1e40af">食指 👆</text>
+  <text x="420" y="108" text-anchor="middle" font-size="8" fill="#1e40af">我能做什么？</text>
+  <!-- Palm question -->
+  <rect x="350" y="200" width="130" height="50" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="415" y="220" text-anchor="middle" font-size="9" font-weight="bold" fill="#166534">手掌 🖐️</text>
+  <text x="415" y="238" text-anchor="middle" font-size="8" fill="#166534">还能用在哪？</text>
+  <text x="300" y="370" text-anchor="middle" font-size="12" font-weight="bold" fill="#6b21a8">学前三问：学啥？为啥？还能用在哪？</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" font-family="'Noto Sans SC', sans-serif">
+  <rect width="600" height="320" fill="#fffbeb" rx="16"/>
+  <text x="300" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#92400e">改一改，猜得对</text>
+  
+  <!-- Before -->
+  <rect x="30" y="60" width="250" height="200" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="155" y="90" text-anchor="middle" font-size="14" font-weight="bold" fill="#92400e">觉得自己学会了</text>
+  <text x="155" y="130" text-anchor="middle" font-size="24" fill="#1e293b">3 + 5 = 8</text>
+  <text x="155" y="160" text-anchor="middle" font-size="10" fill="#92400e">嗯，我会了。</text>
+  <text x="155" y="180" text-anchor="middle" font-size="10" fill="#92400e">✓ 能背出来</text>
+  <text x="155" y="200" text-anchor="middle" font-size="10" fill="#92400e">✓ 作业全对</text>
+  <text x="155" y="230" text-anchor="middle" font-size="10" fill="#f59e0b">但是...</text>
+  
+  <!-- Arrow -->
+  <text x="295" y="160" text-anchor="middle" font-size="24" fill="#94a3b8">→</text>
+
+  <!-- After -->
+  <rect x="320" y="60" width="250" height="200" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="445" y="90" text-anchor="middle" font-size="14" font-weight="bold" fill="#166534">改一改，试试</text>
+  <text x="445" y="125" text-anchor="middle" font-size="10" fill="#166534">把 5 改成 0：3 + 0 = ？</text>
+  <text x="445" y="145" text-anchor="middle" font-size="10" fill="#166534">→ 先猜…… 3！✓</text>
+  <text x="445" y="170" text-anchor="middle" font-size="10" fill="#166534">把 + 改成 -：3 - 5 = ？</text>
+  <text x="445" y="190" text-anchor="middle" font-size="10" fill="#166534">→ 先猜……嗯？</text>
+  <text x="445" y="215" text-anchor="middle" font-size="10" fill="#166534">把 5 改成 100：3 + 100 = ？</text>
+  <text x="445" y="235" text-anchor="middle" font-size="10" fill="#166534">→ 先猜……103！✓</text>
+  <text x="445" y="260" text-anchor="middle" font-size="10" font-weight="bold" fill="#059669">猜对了才是真懂了！</text>
+
+  <text x="300" y="305" text-anchor="middle" font-size="12" font-weight="bold" fill="#92400e">改一改，猜得对——你学透了吗？</text>
+</svg>
